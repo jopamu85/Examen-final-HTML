@@ -17,6 +17,77 @@
     <h2>Fecha de nacimiento</h2> <h3>07/02/1985</h3>
     <h2>Lugar de nacimiento</h2> <h3>San Pedro, San Jose, Costa Rica</h3>
     <a href="index.html">Inicio</a> | <a href="educacion.html">Educaión</a> | <a href="experiencia.html">Experiencia</a>
+    <h2>Educación</h2>
+    <table border="1", cellpadding="10", cellspacing="0">
+      <thead>
+        <th>Año</th>
+        <th>Institución</th>
+        <th>Lugar</th>
+        <th>Culminó?</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2003</td>
+          <td>Colegio Técnico Profesional de Heredia</td>
+          <td>Heredia</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2010</td>
+          <td>Universidad Hispanoamericana</td>
+          <td>Tibás</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Agregar Estudios</h3>
+    <form name="formEducation" autocomplete="on">
+      <p>
+      <label for="Año">Año: </label>
+      <select class="year" name="Año" required>
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>2000</option>
+        <option>1999</option>
+        <option>1998</option>
+        <option>1997</option>
+        <option>1996</option>
+        </select>
+        <br>
+        <label for="institucion">Institución: </label>
+        <input type="text" name="institucion" placeholder="Ej. Escuela, Colegio.."required>
+        <br>
+        <label for="Lugar">Lugar: </label>
+        <textarea name="Lugar" rows="2" cols="10" required></textarea>
+        <br>
+        <label for="culmino">Culminó?: </label>
+        <input type="radio" name="culmino" value="Si">Si
+        <input type="radio" name="culmino" value="No">No
+        <br>
+        <button type="submit" name="Enviar">Enviar</button>
+    </form>
   </body>
   <footer>
     <p>@Derechos Reservados</p>
